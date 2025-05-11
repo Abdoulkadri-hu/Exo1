@@ -1,17 +1,10 @@
 #!/bin/bash
 
-# Demande le nom du fichier
-echo -n "Entrez le nom du fichier (sans extension) : "
-read name
+# Demande à l'utilisateur de saisir le nom complet du fichier (avec extension)
+echo -n "Entrez le nom du fichier : "
+read filename
 
-# Demande l'extension
-echo -n "Entrez l'extension du fichier (ex: txt) : "
-read extension
-
-# Concatène le nom complet
-filename="${name}.${extension}"
-
-# Vérifie l'existence du fichier
+# Vérifie si le fichier existe
 if [ -f "$filename" ]; then
     echo "Le fichier '$filename' existe."
 else
