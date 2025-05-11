@@ -1,7 +1,7 @@
 #!/bin/bash
-if [ -f ~/test ]; then
+if [ -f filename ]; then
 echo "Le fichier existe."
 else    
 echo "Le fichier n'existe pas." 
  
-#[ -f ~/test ] vérifie si un fichier nomé test existe ou non
+#[ -f filename ] vérifie si un fichier nomé filename existe ou non
