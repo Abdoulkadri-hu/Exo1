@@ -1,3 +1,2 @@
 #!/bin/bash
-echo hello world # echo pour affiche le texte "Hello World!" à l’écran.
-
+printf 'hello world!' #printf pour affiche le texte "Hello World!" à l’écran.
