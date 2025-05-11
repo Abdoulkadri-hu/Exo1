@@ -1,7 +1,12 @@
 #!/bin/bash
-if [ -f filename ]; then
-echo "Le fichier existe."
-else    
-echo "Le fichier n'existe pas." 
+
+# Demande à l'utilisateur de saisir un nom de fichier
+echo -n "Entrez le nom du fichier à vérifier : "
+read filename
+
+# Vérifie si le fichier existe et est un fichier ordinaire
+if [ -f "$filename" ]; then
+    echo "Le fichier '$filename' existe."
+else
+    echo "Le fichier '$filename' n'existe pas."
 fi
-#[ -f filename ] vérifie si un fichier nomé filename existe ou non
