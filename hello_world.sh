@@ -1,2 +1,2 @@
 #!/bin/bash
-printf hello world! #print pour affiche le texte "Hello World!" à l’écran.
+printf "hello world!" #printf pour affiche le texte "Hello World!" à l’écran.
