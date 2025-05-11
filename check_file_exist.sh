@@ -1,5 +1,5 @@
 #!/bin/bash
-filename=$1 #le nom du fichier passer en argument 
+filename=$0 #le nom du fichier passer en argument 
 if [ -f "$filename" ]; then # Vérifie si le fichier existe.
     echo "Le fichier '$filename' existe."
 else
